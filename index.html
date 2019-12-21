@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/a7219b3465.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+</head>
+
+<title>Password Generator</title>
+
+<body>
+    <div class="container">
+        <h2>Password Generator</h2>
+        <div class="result-container">
+            <span id="result"></span>
+        </div>
+
+        <div class="settings">
+            <div class="setting">
+                <label for="length">Password Length</label>
+                <input type="number" id="length" min="4" max="20" value="20" />
+            </div>
+            <div class="setting">
+                <label for="uppercase">Include uppercase letters</label>
+                <input type="checkbox" id="uppercase" checked />
+            </div>
+            <div class="setting">
+                <label for="lowercase">Include lowercase letters</label>
+                <input type="checkbox" id="lowercase" checked />
+            </div>
+            <div class="setting">
+                <label for="numbers">Include numbers</label>
+                <input type="checkbox" id="numbers" checked />
+            </div>
+            <div class="setting">
+                <label for="symbols">Include lowercase letters</label>
+                <input type="checkbox" id="symbols" checked />
+            </div>
+            <div class="setting">
+                <label for="symbols">Copy Password to Clipboard</label>
+                <button class="btn" id="clipboard">
+                    <i class="far fa-clipboard fa-2x"></i>
+                </button>
+            </div>
+        </div>
+
+        <button class="btn btn-large" id="generate">Generate Password</button>
+    </div>
+
+<script src="app.js"></script>
+</body>
